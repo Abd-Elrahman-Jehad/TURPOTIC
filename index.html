@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic page setup for mobile-first rendering and browser theme color. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020814" />
+    <title>Turpotic Gallery</title>
+
+    <!-- Real favicon used in the browser tab. -->
+    <link rel="icon" href="favicon-luxury-car.png" type="image/png" />
+
+    <!-- Warm up the image host and preload the first hero image for a faster first paint. -->
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2400&q=82" />
+
+    <!-- Relative paths keep the site working on Netlify, Vercel, GitHub Pages, and local servers. -->
+    <link rel="stylesheet" href="src/styles.css?v=final-18" />
+  </head>
+  <body>
+    <!-- The JavaScript app renders every page into this root element. -->
+    <div id="root"></div>
+    <script type="module" src="src/app.js?v=final-18"></script>
+  </body>
+</html>
